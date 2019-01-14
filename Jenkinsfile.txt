@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                echo  'Build time was slow!!'
+                echo 'time stamping plugin'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+                echo 'I hate testing,too many bugs to detect'
+                echo 'lets see this plugin works'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                echo 'This is my time baby..shipping time..Lets Go'
+                echo 'time stamping with time stamp plugin'
+            }
+        }
+    }
+}
